@@ -1,0 +1,27 @@
+body {
+  font-family: "Segoe UI";
+  line-height: 1.8;
+  color: #f5f6f7;
+  background-image: url('/static/img/AI.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+}
+h2 {
+  font-weight: 500;
+  font-size: 72px;
+}
+h3 {
+  font-weight: 200;
+  font-size: 28px;
+}
+h4, h5 {
+  margin: 10px 0 30px 0;
+  font-size: 20px;
+  color: white;
+}
+.container-fluid {
+padding-top: 70px;
+padding-bottom: 70px;
+}

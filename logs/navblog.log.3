@@ -1,0 +1,85 @@
+2020-04-11 14:40:54,218 ERROR: Exception on /register [GET] [in c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\owner\PycharmProjects\flask_blog\blog_app\routes.py", line 68, in register
+    return render_template('register.html', title='Register', form=form)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\owner\PycharmProjects\flask_blog\blog_app\templates\register.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\owner\PycharmProjects\flask_blog\blog_app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 3, in block "doc"
+    <html{% block html_attribs %}{% endblock html_attribs %}>
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 11, in block "html"
+    {%- endblock metas %}
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 13, in block "body"
+    {%- block styles %}
+  File "C:\Users\owner\PycharmProjects\flask_blog\blog_app\templates\base.html", line 53, in block "content"
+    {% block app_content %}{% endblock %}
+  File "C:\Users\owner\PycharmProjects\flask_blog\blog_app\templates\register.html", line 8, in block "app_content"
+    {{ wtf.quick.form(form) }}
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'jinja2.environment.TemplateModule object' has no attribute 'quick'
+2020-04-11 14:41:27,434 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 07:38:16,958 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 07:46:36,069 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 07:55:04,868 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 07:55:38,740 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 07:58:34,628 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 07:59:28,793 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 08:01:46,365 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 08:03:17,337 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 08:08:17,168 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 08:36:41,217 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:15:38,166 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:15:58,647 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:16:32,108 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:16:47,739 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:17:29,212 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:17:38,924 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:22:50,914 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:24:18,199 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:35:58,137 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:37:36,009 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:38:33,133 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:40:07,807 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:43:50,167 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:45:04,488 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:45:30,328 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:45:46,232 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:46:22,216 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:46:37,557 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:46:54,658 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:47:25,640 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:48:06,994 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:48:17,724 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:48:49,224 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:49:48,654 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:52:09,956 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 09:53:20,628 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 10:31:08,993 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-12 10:56:18,445 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:51]
+2020-04-12 11:23:54,946 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:51]

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block app_content %}
+<div class="container-fluid intro text-center">
+    <h2 class="margin">Nav Nav Blog</h2>
+    <h3>Share ideas and follow my articles</h3>
+</div>
+
+<div class="container text-center">
+    <h4>What The Blog Is About?</h4>
+    <p><em>We Love Artificial Intelligence</em></p>
+    <p>Here you can find the best articles about AI Programming stuff and a lot more!!!</p>
+</div>
+{% endblock %}

@@ -1,0 +1,60 @@
+2020-04-12 11:52:06,785 ERROR: Exception on /home [GET] [in c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\owner\PycharmProjects\flask_blog\blog_app\routes.py", line 28, in home
+    prev_url=prev_url)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\owner\PycharmProjects\flask_blog\blog_app\templates\home.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\owner\PycharmProjects\flask_blog\blog_app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 3, in block "doc"
+    <html{% block html_attribs %}{% endblock html_attribs %}>
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 11, in block "html"
+    {%- endblock metas %}
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 13, in block "body"
+    {%- block styles %}
+  File "C:\Users\owner\PycharmProjects\flask_blog\blog_app\templates\base.html", line 54, in block "content"
+    {% block app_content %}{% endblock %}
+  File "C:\Users\owner\PycharmProjects\flask_blog\blog_app\templates\home.html", line 10, in block "app_content"
+    {% include '_post.html' %}
+  File "C:\Users\owner\PycharmProjects\flask_blog\blog_app\templates\_post.html", line 11, in top-level template code
+    Says:<br>{{ post.body }}
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask_moment.py", line 133, in fromNow
+    return self._render("fromNow(%s)" % int(no_suffix), refresh)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask_moment.py", line 123, in _render
+    t = self._timestamp_as_iso_8601(self.timestamp)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask_moment.py", line 120, in _timestamp_as_iso_8601
+    return timestamp.strftime('%Y-%m-%dT%H:%M:%S' + tz)
+AttributeError: 'str' object has no attribute 'strftime'
+2020-04-12 11:52:13,218 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:51]
+2020-04-14 08:17:59,401 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:52]
+2020-04-14 08:55:09,128 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-15 18:21:56,115 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-17 14:01:06,846 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-20 23:18:07,216 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-20 23:18:27,686 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]

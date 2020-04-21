@@ -1,0 +1,106 @@
+2020-04-10 08:23:27,356 ERROR: Exception on /test_home_page [GET] [in c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\owner\PycharmProjects\flask_blog\blog_app\routes.py", line 178, in test_home_page
+    return render_template('test_home_page.html', title='TEST_HOME_PAGE')
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\loaders.py", line 129, in load
+    code = environment.compile(source, name, filename)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\owner\PycharmProjects\flask_blog\blog_app\templates\test_home_page.html", line 10, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'.
+2020-04-10 08:23:27,755 ERROR: Exception on /test_home_page [GET] [in c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\owner\PycharmProjects\flask_blog\blog_app\routes.py", line 178, in test_home_page
+    return render_template('test_home_page.html', title='TEST_HOME_PAGE')
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\loaders.py", line 129, in load
+    code = environment.compile(source, name, filename)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\owner\pycharmprojects\flask_blog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\owner\PycharmProjects\flask_blog\blog_app\templates\test_home_page.html", line 10, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'.
+2020-04-10 08:24:02,034 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 08:27:58,457 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 08:28:25,747 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 08:28:39,702 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 08:29:23,881 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 08:32:58,480 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 08:33:58,250 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 08:34:40,333 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 08:34:53,375 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 08:35:16,421 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 08:51:13,828 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 08:51:40,864 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 08:52:58,316 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 08:55:16,268 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 09:14:30,269 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 09:15:14,076 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 10:38:51,716 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 10:46:16,204 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 10:51:34,312 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 10:52:18,454 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 10:54:49,972 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 10:55:37,767 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 10:55:50,018 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 10:57:11,924 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 11:01:03,955 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 11:01:39,201 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 11:02:34,589 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 11:02:58,007 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 11:03:58,942 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 11:04:08,019 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 11:04:28,621 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 11:04:56,594 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 11:05:12,506 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 11:05:29,817 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 11:05:36,757 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-10 11:07:47,137 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
