@@ -59,3 +59,7 @@ AttributeError: 'str' object has no attribute 'strftime'
 2020-04-20 23:18:07,216 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
 2020-04-20 23:18:27,686 INFO: Nav Blog Startup [in C:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
 2020-04-21 10:20:21,215 INFO: Nav Blog Startup [in c:\Users\owner\PycharmProjects\flask_blog\blog_app\__init__.py:49]
+2020-04-22 22:47:18,305 INFO: Nav Blog Startup [in /home/navnav/Documents/Nav Projects/flask_blog/blog_app/__init__.py:49]
+2020-04-25 17:19:25,821 INFO: Nav Blog Startup [in /home/navnav/Documents/Nav Projects/flask_blog/blog_app/__init__.py:49]
+2020-04-26 21:12:21,791 INFO: Nav Blog Startup [in /home/navnav/Documents/Nav Projects/flask_blog/blog_app/__init__.py:49]
+2020-04-26 21:12:37,786 INFO: Nav Blog Startup [in /home/navnav/Documents/Nav Projects/flask_blog/blog_app/__init__.py:49]
